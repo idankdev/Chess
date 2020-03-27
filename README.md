@@ -8,3 +8,4 @@ Login to docker with your docker credentials: `sudo docker login -u <username> -
 ```
 sudo docker pull idankash/chess && sudo docker run --net=host --name chess -i -t chess -d
 ```
+open ```http://localhost``` in your browser.
