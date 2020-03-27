@@ -10,4 +10,3 @@ sudo docker pull idankash/chess && sudo docker run --net=host --name chess -i -t
 ```
 open ```http://localhost``` in your browser.
 
-![chess](/home/idan/pictures/Screenshot from 2020-03-27 00-41-06.png)
