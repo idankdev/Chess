@@ -107,12 +107,16 @@ def generate_move_with_classical_minimax(board, minimax_depth = 4):
   for move in board.legal_moves:
     children.append([move.uci(), from_square[getattr(chess, move.uci()[:2].upper())] + to_square[getattr(chess, move.uci()[2:4].upper())] +  + material_score(board, move) - material_score_after_move(board, move)])
   children.sort(key = lambda a: a[1], reverse = True)
-  print ("nn move is " + children[0][0] + " and the score is ", children[0][1])
+  if (np.random.random() > 0.3):
+    nn_move = children[0]
+  else:
+    nn_move = children[1]
+  print ("nn move is " + nn_move[0] + " and the score is ", nn_move[1)
   print ("minimax move is " + minimax_move + " and the score is ", minimax_score) 
   if minimax_score - children[0][1] > 1.5:
     return minimax_move
   else:
-    return children[0][0]      
+    return nn_move[0]      
 
 @app.route('/', methods=['GET', 'POST'])
 def get():
