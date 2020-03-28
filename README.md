@@ -3,7 +3,7 @@ Chess Engine Powered by Deep Learning
 
 ## Quick Install
 ### Prerequisites
-* Docker
+* Docker Latest Version
 #### Linux
 
 Login to docker with your docker credentials: `$ sudo docker login -u <username> -p <password> docker.io`
