@@ -111,9 +111,9 @@ def generate_move_with_classical_minimax(board, minimax_depth = 4):
     nn_move = children[0]
   else:
     nn_move = children[1]
-  print ("nn move is " + nn_move[0] + " and the score is ", nn_move[1)
+  print ("nn move is " + nn_move[0] + " and the score is ", nn_move[1])
   print ("minimax move is " + minimax_move + " and the score is ", minimax_score) 
-  if minimax_score - children[0][1] > 1.5:
+  if minimax_score - nn_move[1] > 1.5:
     return minimax_move
   else:
     return nn_move[0]      
