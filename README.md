@@ -20,3 +20,7 @@ Login to docker with your docker credentials: `$ docker login -u <username> -p <
 $ docker pull idankash/chess && sudo docker run --net=host --name chess -i -t chess -d
 ```
 open ```http://localhost``` in your browser.
+
+***
+
+![Chess Image](https://github.com/idankdev/Chess/blob/master/chess.png)
