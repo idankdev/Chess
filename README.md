@@ -21,6 +21,6 @@ $ docker pull idankash/chess && sudo docker run --net=host --name chess -i -t ch
 ```
 open ```http://localhost``` in your browser.
 
-***
-
+___
+## Gallery
 ![Chess Image](https://github.com/idankdev/Chess/blob/master/chess.png)
