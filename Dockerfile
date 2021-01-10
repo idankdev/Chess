@@ -1,5 +1,5 @@
 FROM ubuntu:19.10
-MAINTAINER Faithful <idankash@gmail.com>
+MAINTAINER I <idankash@gmail.com>
 
 RUN apt-get update && apt-get install -y apache2 python3 python3-pip && apt-get clean && rm -rf /var/lib/apt/lists/*
 
